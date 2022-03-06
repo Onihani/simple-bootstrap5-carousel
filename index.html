@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simeple Bootstrap 5 Carousel</title>
+  <!-- Adding bootstrap files -->
+  <!-- css -->
+  <link rel="stylesheet" href="./src/bootstrap/css/bootstrap.min.css">
+  <!-- js -->
+  <!-- adding the defer attribute to script files in the head makes them load after the main page and all css has been loaded  -->
+  <script src="./src/bootstrap/js/bootstrap.min.js" defer></script>
+</head>
+<body>
+  <!-- Main wrapper  -->
+  <main>
+    <!-- bootstrap container -->
+    <div class="container">
+      <!-- carousel code => https://getbootstrap.com/docs/5.1/components/carousel/ -->
+      <div id="carouselExampleWithControlsAndIndicators" class="carousel slide" data-bs-ride="carousel">
+        <!-- carousel indicators => indicators locaed at the bottom of carousel -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleWithControlsAndIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleWithControlsAndIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleWithControlsAndIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <!-- carousel inner => carousel items goes in inner -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./src/images/tezos-1.jpg" class="d-block w-100" alt="First Carousel Image">
+          </div>
+          <div class="carousel-item">
+            <img src="./src/images/tezos-2.jpg" class="d-block w-100" alt="Second Carousel Image">
+          </div>
+          <div class="carousel-item">
+            <img src="./src/images/tezos-3.jpg" class="d-block w-100" alt="Third Carousel Image">
+          </div>
+        </div>
+        <!-- carousel controls => prev and next -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleWithControlsAndIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleWithControlsAndIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
